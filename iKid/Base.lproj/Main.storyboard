@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,9 +15,32 @@
             <objects>
                 <viewController id="0Cz-53-bvX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccm-yP-5nv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When does a joke become a dad joke?" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBC-5P-cfR">
+                                <rect key="frame" x="20" y="287" width="335" height="93.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJ9-X5-ddd">
+                                <rect key="frame" x="329" y="583" width="30" height="30"/>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <segue destination="IUN-ng-BkQ" kind="show" id="0D2-WX-cAZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OBC-5P-cfR" secondAttribute="trailing" constant="20" symbolic="YES" id="KIs-uM-hTA"/>
+                            <constraint firstItem="OBC-5P-cfR" firstAttribute="centerX" secondItem="Ccm-yP-5nv" secondAttribute="centerX" id="Rlb-06-P62"/>
+                            <constraint firstItem="2gt-Hm-eAV" firstAttribute="bottom" secondItem="gJ9-X5-ddd" secondAttribute="bottom" constant="5" id="ZJj-br-EKF"/>
+                            <constraint firstItem="OBC-5P-cfR" firstAttribute="leading" secondItem="Ccm-yP-5nv" secondAttribute="leading" constant="20" symbolic="YES" id="ek0-LY-AIG"/>
+                            <constraint firstItem="OBC-5P-cfR" firstAttribute="centerY" secondItem="Ccm-yP-5nv" secondAttribute="centerY" id="vtx-IK-O0N"/>
+                            <constraint firstItem="2gt-Hm-eAV" firstAttribute="trailing" secondItem="gJ9-X5-ddd" secondAttribute="trailing" constant="16" id="wDP-MW-WGl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2gt-Hm-eAV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" image="first" id="KLl-tX-lGC"/>
@@ -26,16 +49,54 @@
             </objects>
             <point key="canvasLocation" x="748" y="-994"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gTZ-QO-5bt">
+            <objects>
+                <viewController id="IUN-ng-BkQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BX3-9Y-3Hz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When it becomes apparent" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaa-Q1-y6n">
+                                <rect key="frame" x="20" y="287" width="335" height="93.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpf-Ma-qkI">
+                                <rect key="frame" x="22" y="617" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="U1i-d0-jLT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qaa-Q1-y6n" firstAttribute="leading" secondItem="BX3-9Y-3Hz" secondAttribute="leading" constant="20" symbolic="YES" id="4fW-mz-4Fm"/>
+                            <constraint firstItem="Xpf-Ma-qkI" firstAttribute="leading" secondItem="UY2-d3-T0m" secondAttribute="leading" constant="22" id="9B9-Sh-MJu"/>
+                            <constraint firstItem="UY2-d3-T0m" firstAttribute="bottom" secondItem="Xpf-Ma-qkI" secondAttribute="bottom" constant="20" id="I9E-FX-Z2g"/>
+                            <constraint firstItem="qaa-Q1-y6n" firstAttribute="centerX" secondItem="BX3-9Y-3Hz" secondAttribute="centerX" id="gRT-YO-gU3"/>
+                            <constraint firstItem="qaa-Q1-y6n" firstAttribute="centerY" secondItem="BX3-9Y-3Hz" secondAttribute="centerY" id="qyn-9J-8be"/>
+                            <constraint firstAttribute="trailing" secondItem="qaa-Q1-y6n" secondAttribute="trailing" constant="20" symbolic="YES" id="t4R-R2-wIQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UY2-d3-T0m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kc7-uL-aHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="-994"/>
+        </scene>
         <!--Good-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47o-r6-V1W">
-                                <rect key="frame" x="20" y="121" width="280" height="326"/>
+                                <rect key="frame" x="20" y="194" width="335" height="279.5"/>
                                 <string key="text">Why did the second student think it 
 was okay to cheat off the first student's
  "private" notes?</string>
@@ -44,7 +105,7 @@ was okay to cheat off the first student's
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-4z-CK2">
-                                <rect key="frame" x="270" y="489" width="30" height="30"/>
+                                <rect key="frame" x="325" y="588" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="0Xf-mr-B00" kind="show" id="xoZ-br-Hr8"/>
@@ -73,17 +134,17 @@ was okay to cheat off the first student's
             <objects>
                 <viewController id="0Xf-mr-B00" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fau-2u-SRO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Because he thinks it's okay in the same &quot;class&quot;" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGf-GF-4gA">
-                                <rect key="frame" x="20" y="191" width="280" height="186.5"/>
+                                <rect key="frame" x="20" y="263.5" width="335" height="140"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoX-Oc-Q2z">
-                                <rect key="frame" x="22" y="518" width="34" height="30"/>
+                                <rect key="frame" x="22" y="617" width="34" height="30"/>
                                 <state key="normal" title="back"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="hZF-6v-ibR"/>
@@ -111,17 +172,17 @@ was okay to cheat off the first student's
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you throw a space party?" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-V4-rxa">
-                                <rect key="frame" x="18" y="214" width="284" height="140"/>
+                                <rect key="frame" x="18" y="287" width="339" height="93.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaC-1M-V5D">
-                                <rect key="frame" x="266" y="489" width="30" height="30"/>
+                                <rect key="frame" x="321" y="588" width="30" height="30"/>
                                 <state key="normal" title="next"/>
                                 <connections>
                                     <segue destination="i0U-jp-pkm" kind="show" id="0f5-aI-K19"/>
@@ -150,17 +211,17 @@ was okay to cheat off the first student's
             <objects>
                 <viewController id="i0U-jp-pkm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tRP-bd-eYg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You planet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TK2-hb-uHa">
-                                <rect key="frame" x="114.5" y="214" width="91.5" height="140"/>
+                                <rect key="frame" x="73" y="310" width="230" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wn-Z2-Nhw">
-                                <rect key="frame" x="16" y="518" width="34" height="30"/>
+                                <rect key="frame" x="16" y="617" width="34" height="30"/>
                                 <state key="normal" title="back"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="gCL-UL-3Gc"/>
@@ -169,11 +230,11 @@ was okay to cheat off the first student's
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TK2-hb-uHa" firstAttribute="leading" secondItem="Gn7-Sz-Hbl" secondAttribute="leading" constant="114.5" id="1L4-VE-QWr"/>
+                            <constraint firstItem="TK2-hb-uHa" firstAttribute="leading" secondItem="Gn7-Sz-Hbl" secondAttribute="leading" constant="73" id="Abe-Q0-4rz"/>
                             <constraint firstItem="TK2-hb-uHa" firstAttribute="centerX" secondItem="tRP-bd-eYg" secondAttribute="centerX" id="BKf-9I-rMP"/>
                             <constraint firstItem="TK2-hb-uHa" firstAttribute="centerY" secondItem="tRP-bd-eYg" secondAttribute="centerY" id="PS2-2M-44B"/>
+                            <constraint firstItem="Gn7-Sz-Hbl" firstAttribute="trailing" secondItem="TK2-hb-uHa" secondAttribute="trailing" constant="72" id="Wti-ur-AQP"/>
                             <constraint firstItem="0wn-Z2-Nhw" firstAttribute="leading" secondItem="Gn7-Sz-Hbl" secondAttribute="leading" constant="16" id="g1q-b9-rh8"/>
-                            <constraint firstItem="Gn7-Sz-Hbl" firstAttribute="trailing" secondItem="TK2-hb-uHa" secondAttribute="trailing" constant="114" id="iN5-lK-RxB"/>
                             <constraint firstItem="Gn7-Sz-Hbl" firstAttribute="bottom" secondItem="0wn-Z2-Nhw" secondAttribute="bottom" constant="20" id="m9F-jz-xmw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gn7-Sz-Hbl"/>
