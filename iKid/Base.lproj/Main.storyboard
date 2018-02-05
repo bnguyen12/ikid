@@ -10,6 +10,82 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--MEMEZ-->
+        <scene sceneID="eAB-UJ-SW7">
+            <objects>
+                <viewController id="t7e-Nh-God" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjx-Ed-RVV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOOO I heard you watched YuGiOh......" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAC-tl-XR1">
+                                <rect key="frame" x="20" y="263.5" width="335" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOu-k4-Csf">
+                                <rect key="frame" x="329" y="588" width="30" height="30"/>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <segue destination="VxH-Ww-xH0" kind="show" id="ckO-wE-Mvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cAC-tl-XR1" secondAttribute="trailing" constant="20" symbolic="YES" id="2I5-K4-6hH"/>
+                            <constraint firstItem="cAC-tl-XR1" firstAttribute="centerX" secondItem="bjx-Ed-RVV" secondAttribute="centerX" id="4Fv-89-XPk"/>
+                            <constraint firstItem="cAC-tl-XR1" firstAttribute="leading" secondItem="bjx-Ed-RVV" secondAttribute="leading" constant="20" symbolic="YES" id="6C4-nj-RHc"/>
+                            <constraint firstItem="cAC-tl-XR1" firstAttribute="centerY" secondItem="bjx-Ed-RVV" secondAttribute="centerY" id="9kk-mf-Uzy"/>
+                            <constraint firstItem="bZV-lm-hw8" firstAttribute="bottom" secondItem="dOu-k4-Csf" secondAttribute="bottom" id="H9D-cA-k1w"/>
+                            <constraint firstItem="bZV-lm-hw8" firstAttribute="trailing" secondItem="dOu-k4-Csf" secondAttribute="trailing" constant="16" id="v6L-tB-AQB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bZV-lm-hw8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MEMEZ" image="second" id="lrC-fE-tcI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zyl-Nl-SdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-1659"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q5O-o8-GHU">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="VxH-Ww-xH0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="khf-g8-qZH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-bC-Pzs">
+                                <rect key="frame" x="22" y="617" width="34" height="30"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="rOW-Ml-gFV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YuGiOh" translatesAutoresizingMaskIntoConstraints="NO" id="0No-Cl-NGy">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0No-Cl-NGy" secondAttribute="trailing" constant="20" symbolic="YES" id="18b-Db-HCP"/>
+                            <constraint firstItem="0No-Cl-NGy" firstAttribute="centerX" secondItem="khf-g8-qZH" secondAttribute="centerX" id="FCf-fj-aP5"/>
+                            <constraint firstItem="dLi-bC-Pzs" firstAttribute="leading" secondItem="TVd-dP-aiC" secondAttribute="leading" constant="22" id="eYw-Di-dMQ"/>
+                            <constraint firstAttribute="bottom" secondItem="0No-Cl-NGy" secondAttribute="bottom" constant="20" symbolic="YES" id="nVH-ek-hEJ"/>
+                            <constraint firstItem="TVd-dP-aiC" firstAttribute="bottom" secondItem="dLi-bC-Pzs" secondAttribute="bottom" constant="20" id="wCR-ew-u0y"/>
+                            <constraint firstItem="0No-Cl-NGy" firstAttribute="leading" secondItem="khf-g8-qZH" secondAttribute="leading" constant="20" symbolic="YES" id="xse-eU-Mmu"/>
+                            <constraint firstItem="0No-Cl-NGy" firstAttribute="top" secondItem="khf-g8-qZH" secondAttribute="top" constant="20" symbolic="YES" id="y7D-Lr-MT6"/>
+                            <constraint firstItem="0No-Cl-NGy" firstAttribute="centerY" secondItem="khf-g8-qZH" secondAttribute="centerY" id="y9f-fa-zIW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TVd-dP-aiC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGB-zB-Lem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="-1659.7826086956522"/>
+        </scene>
         <!--Dad-->
         <scene sceneID="eTc-gj-CkE">
             <objects>
@@ -257,6 +333,7 @@ was okay to cheat off the first student's
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="0Cz-53-bvX" kind="relationship" relationship="viewControllers" id="f7I-ba-BQY"/>
+                        <segue destination="t7e-Nh-God" kind="relationship" relationship="viewControllers" id="hxU-GJ-h1G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -265,10 +342,11 @@ was okay to cheat off the first student's
         </scene>
     </scenes>
     <resources>
+        <image name="YuGiOh" width="460" height="383"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gCL-UL-3Gc"/>
+        <segue reference="rOW-Ml-gFV"/>
     </inferredMetricsTieBreakers>
 </document>
