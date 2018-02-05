@@ -52,7 +52,7 @@
         <!--View Controller-->
         <scene sceneID="gTZ-QO-5bt">
             <objects>
-                <viewController id="IUN-ng-BkQ" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="IUN-ng-BkQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BX3-9Y-3Hz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,10 +129,10 @@ was okay to cheat off the first student's
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
+        <!--Good Answer View Controller-->
         <scene sceneID="Now-RU-mj1">
             <objects>
-                <viewController id="0Xf-mr-B00" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="0Xf-mr-B00" customClass="GoodAnswerViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fau-2u-SRO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +209,7 @@ was okay to cheat off the first student's
         <!--View Controller-->
         <scene sceneID="wpR-IL-qd9">
             <objects>
-                <viewController id="i0U-jp-pkm" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="i0U-jp-pkm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tRP-bd-eYg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
